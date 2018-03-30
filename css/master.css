@@ -1,0 +1,106 @@
+
+/*==============================
+ font families:
+
+  font-family: 'Lato', sans-serif;
+  font-family: 'Courgette', cursive;
+
+ ===================================*/
+
+ /* MAIN COLORS */
+ :root{
+   --pinky:  #c70ea2;
+   --greeny: #a2c70e;
+   --sky: #0ea2c7;
+ }
+
+ body{
+     font-family: 'Lato', sans-serif !important;
+ }
+ h1,h2,h3,h4,h5,h6{
+   font-family: 'Courgette', cursive !important;
+ }
+p{
+  font-size: 1.1rem;
+}
+hr{
+  border: 1px solid white;
+}
+/*===============================
+ SOME PERSONAL STYLES
+==================================*/
+.pinky-text{
+  color: var(--pinky) !important;
+}
+.bg-pinky{
+  background: var(--pinky) !important;
+}
+.sky-text{
+  color: var(--sky) !important;
+}
+.bg-sky{
+  background: var(--sky)!important;
+}
+.greeny-text{
+  color: var(--greeny) !important;
+}
+.bg-greeny{
+  background: var(--greeny) !important;
+}
+.shadow-text{
+  text-shadow: 1px 1px 3px #22021c;
+}
+.shadow-box{
+  box-shadow: 0px 1px 10px #000 ;
+}
+.border-pinky{
+  border: 1px solid var(--pinky);
+}
+.border-sky{
+  border: 1px solid var(--sky);
+}
+
+#first-part{
+  background: url('../img/main-header.jpg') no-repeat;
+  background-size: cover;
+  height: 640px;
+}
+#social-tab{
+  box-shadow: 0 2px 3px rgba(0,0,0,.7);
+  position: relative;
+  z-index: 100;
+}
+#second-part{
+  background: var(--sky);
+  height: 600px;
+  padding: 10% 0;
+}
+#third-part{
+  background: var(--greeny);
+  min-height: 600px;
+  padding: 5% 0;
+}
+/* Personal styles */
+
+.personal-button{
+  border-bottom-right-radius: .25rem!important;
+  border-bottom-left-radius: .25rem!important;
+}
+.personal-button:hover{
+  filter: grayscale(60%);
+}
+
+.list-group-item.active{
+  background-color: var(--pinky) !important;
+}
+.nav-link:hover{
+  color: rgba(208, 204, 204, 0.9)!important;
+  text-shadow: 1px 1px 2px #000 !important;
+}
+.form-control:focus{
+  box-shadow: 0 0 0 0.2rem var(--pinky) !important;
+}
+
+/* TODO:
+1. fix the buttons on second part
+2. make the third part */
